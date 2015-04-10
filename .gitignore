@@ -6,6 +6,7 @@
 *.pdf
 
 ## directories
+config/
 org/
 test/
 from-andy/
