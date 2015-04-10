@@ -1,5 +1,7 @@
 ## files
 *.org
+*.pdf
 
 ## directories
 org/
+test/
