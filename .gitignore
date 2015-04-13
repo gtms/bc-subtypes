@@ -2,13 +2,21 @@
 .DS_Store
 ._.DS_Store
 .Rhistory
+# these seem to be filesystem-dependent backup files:
+._*
+Thumbs.db
 *.org
 *.pdf
+*.xlsx
 
 ## directories
+.bak/
 config/
 org/
 test/
+tmp/
 from-andy/
 from-nick/
 papers/
+data/cel/
+data/cdf/
