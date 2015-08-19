@@ -20,4 +20,3 @@ getAimsPreds <- function(e.mtx, a.dfr) {
                                         "Normal"))
     dfr
 }
-x
