@@ -19,10 +19,10 @@ doSubtypeCombat <- function(mtx, # concatenated expression matrix of at least
     ## Some requirements have to be met for ComBat to run.  Each
     ## subtype-specific batch must have at least 2 samples (although we require
     ## nMin = 3 to be more stringent) to draw summary statistics from: remove
-    ## any sample that contibutes to violate this condition.  Each
-    ## subtype-specific batch must encompass at least two subtypes, i.e., no
-    ## given subtype can only integrate samples from one batch: remove all
-    ## samples that contribute to violate this condition.
+    ## any sample that contibutes to violate this condition.  Each subtype must
+    ## encompass at least two batches, i.e., no given subtype can only
+    ## integrate samples from one batch: remove all samples that contribute to
+    ## violate this condition.
     lst <- tapply(1:ncol(mtx),
                   subtypePreds.fac, function(x) {
                       list(d = mtx[, x],
